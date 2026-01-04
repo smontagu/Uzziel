@@ -33,14 +33,11 @@
 
 // tweak Hebrew number
 #let renumber(number) = {
-  if number.contains("׳") {
-    return number.slice(0, -2)
-  } else if number.contains("״"){
-    return number.slice(0, -4) + number.slice(-2)
-  } else {
-    return number
-  }
+    show ("״") : ""
+    show ("׳") : ""
+    number
 }
+#let hebNum(number) = renumber(numbering("א", number))
 
 #let firstLetterBigAndBold(word) = {
   let firstLetter = word.slice(0, 2)

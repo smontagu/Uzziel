@@ -74,12 +74,13 @@
  ): it => {
    block(above: 1.2em)
         [#link(it.element.location(),
-              it.indented(text(weight: "bold",
-                               size: 16pt,
-                               [#it.prefix():]),
-                          text(weight: "regular",
-                               size: 14pt,
-                               it.inner())))]
+            it.indented(gap: 0.4em,
+                        text(weight: "bold",
+                             size: 16pt,
+                             [#it.prefix():]),
+                        text(weight: "regular",
+                             size: 14pt,
+                             it.inner())))]
  }
 
  show outline.entry.where(
@@ -91,8 +92,9 @@
   }
    block(above: 0.1em)
        [#link(it.element.location(),
-              it.indented(text(size: 12pt, header),
-                          text(size: 12pt, it.inner())))]
+           it.indented(gap: 0.4em,
+                       text(size: 12pt, header),
+                       text(size: 12pt, it.inner())))]
  }
 
  
@@ -182,8 +184,11 @@
   )
 
   outline(depth: 2)
+ frontMatter
 
-  // headers in foreword and main matter
+ // Main matter
+
+ // headers in main matter
   set page(
     numbering: "1",
 
@@ -238,9 +243,6 @@
     }
   }
  )
- frontMatter
-
- // Main matter
 
  set heading(numbering: (..nums) => {
    // We want the positional arguments
@@ -254,9 +256,9 @@
    // int like (1,), as mentioned above. So we check
    // if the array's length is 1 for level one headings.
    if numbers.len() == 1 {
-      numbering("שער א", ..numbers)
+       "שער " + hebNum(..numbers) 
    } else if numbers.len() == 2 {
-      numbering("פרק א", numbers.last())
+       "פרק " + hebNum(numbers.last())
    } else {
       // Everything else
       none
