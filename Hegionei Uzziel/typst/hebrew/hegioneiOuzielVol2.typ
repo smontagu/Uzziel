@@ -1,11 +1,15 @@
 #import "macros.typ": *
 #import "book.typ": *
 
-#show: book.with(title: "הגיוני עזיאל",
-                 subtitle: "חלק ב",
-                 author: "הרב בן ציון מאיר חי עוזיאל",
-                 publicationDate:"תשי״ד",
-                 frontMatter: [#include "13.5-hakdama2.typ"])
+#show: book.with(
+  title: "הגיוני עזיאל",
+  subtitle: "חלק ב",
+  author: "הרב בן ציון מאיר חי עוזיאל",
+  publicationDate:"תשי״ד",
+  frontMatter: [
+    #include "13.5-hakdama2.typ"
+  ]
+)
 #counter(heading).update(13)
 
 #include "14-yira-ahava.typ"

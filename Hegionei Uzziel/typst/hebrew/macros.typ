@@ -23,19 +23,21 @@
 
 #let stars = {
   par(
-     spacing: 0.75em,
-     [#h(1fr)★
+    spacing: 0.75em,
+    [
       #h(1fr)★
       #h(1fr)★
-      #h(1fr)]
+      #h(1fr)★
+      #h(1fr)
+    ]
   )
 }
 
 // tweak Hebrew number
 #let renumber(number) = {
-    show ("״") : ""
-    show ("׳") : ""
-    number
+  show ("״") : ""
+  show ("׳") : ""
+  number
 }
 #let hebNum(number) = renumber(numbering("א", number))
 
@@ -44,7 +46,6 @@
   let rest = word.slice(2)
   text(size: 1.4em)[*#firstLetter*]
   text[#rest]
- 
 }
 #let fLBAB = firstLetterBigAndBold
 

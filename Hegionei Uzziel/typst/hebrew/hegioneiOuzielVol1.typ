@@ -1,12 +1,14 @@
 #import "macros.typ": *
 #import "book.typ": *
 
-#show: book.with(title: "הגיוני עזיאל",
-                 subtitle: "חלק א",
-                 author: "הרב בן ציון מאיר חי עוזיאל",
-                 publicationDate: "תשי״ג",
-                 frontMatter: [
-#include "0-hakdama.typ"])
+#show: book.with(
+  title: "הגיוני עזיאל",
+  subtitle: "חלק א",
+  author: "הרב בן ציון מאיר חי עוזיאל",
+  publicationDate: "תשי״ג",
+  frontMatter: [
+    #include "0-hakdama.typ"
+  ])
 
 #include "1-gemul.typ"
 #include "2-gemul.typ"
