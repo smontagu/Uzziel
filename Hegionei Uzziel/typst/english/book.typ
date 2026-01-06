@@ -5,8 +5,7 @@
           subtitle: "",
           publicationDate: "",
           frontMatter: "",
-          mainMatter) =
-{
+          mainMatter) = {
 
   set document(
     title: title + " " + subtitle,

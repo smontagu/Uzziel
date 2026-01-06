@@ -5,8 +5,7 @@
           subtitle: "",
           publicationDate: "",
           frontMatter: "",
-          mainMatter) =
-{
+          mainMatter) = {
   set document(
     title: title + " " + subtitle,
     author: author
@@ -207,8 +206,7 @@
 
       // No heading if this page is a chapter title
       let nextChapter = query(heading.where(level: 2).after(here()))
-      if nextChapter.len() > 0 and
-         nextChapter.first().location().page() == thisPage {
+      if nextChapter.len() > 0 and nextChapter.first().location().page() == thisPage {
         return
       }
 
@@ -243,8 +241,7 @@
 
       // On chapter title pages, centered page number in the footer
       let lastHeading = query(heading.where(level: 2).before(here()))
-      if lastHeading != () and lastHeading.last().location().page() == thisPage
-      {
+      if lastHeading != () and lastHeading.last().location().page() == thisPage {
         align(center)[#counter(page).display()]
       }
     }
