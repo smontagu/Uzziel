@@ -259,7 +259,7 @@
     // int like (1,), as mentioned above. So we check
     // if the array's length is 1 for level one headings.
     if numbers.len() == 1 {
-      "שער " + hebNum(..numbers) 
+      "שער " + hebNum(numbers.last())
     } else if numbers.len() == 2 {
       "פרק " + hebNum(numbers.last())
     } else {
