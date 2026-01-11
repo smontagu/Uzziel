@@ -119,36 +119,36 @@
     #set align(right)
     ב״ה
     #set align(center)
-    #text(size: 10pt)[ספר]
     #text(size: 28pt)[_#title _]
 
     #text(size: 20pt)[#subtitle]
     #v(.5em)
-    מחקרים והגות לב בידוסות האמונה של תורת ישראל מפי
-    אלקים חיים, נובעים מדברי רז״ל בתלמודם ומדרשם, ומפי מאורינו ומורינו
-    הגדולים החוקרים על דבר אמת, ערוכים ומסודרים לשערים ופרקים
+//    מחקרים והגות לב בידוסות האמונה של תורת ישראל מפי
+//    אלקים חיים, נובעים מדברי רז״ל בתלמודם ומדרשם, ומפי מאורינו ומורינו
+//    הגדולים החוקרים על דבר אמת, ערוכים ומסודרים לשערים ופרקים
 
     #v(1.5em)
 
-    ממני הצערי באלפי ישראל
+//    ממני הצערי באלפי ישראל
 
-    #text(size: 12pt)[ בן ציון מאיר חי עזיאל]
+    #text(size: 18pt)[Ben Ṣion Meir Ḥai Uzziel]
 
-    בן לאדוני אבי עטרת ראשי הודי והדרי זצוק״ל\
-    הגאון הצדיק #larger[יוסף רפאל עזיאל] זצוק״ל\
-    ראב״ד מקודש בעיקו״ת ירושצ״ו
-
-    #v(1.5em)
-    פעיה״ק #larger[ירושלים] ת״ו\
-    שנת #larger[#publicationDate] לפ״ק
+//    בן לאדוני אבי עטרת ראשי הודי והדרי זצוק״ל\
+//    הגאון הצדיק #larger[יוסף רפאל עזיאל] זצוק״ל\
+//    ראב״ד מקודש בעיקו״ת ירושצ״ו
 
     #v(1.5em)
-    יו״ל שנית פעיה״ק #larger[ירושלים] ת״ו\
-    שנת #larger[תשפ״ה] לפ״ק\
-    על ידי הוצאות חטף סגול\
+    #larger[Jerusalem]\
+    #larger[#publicationDate]
+
+    #v(1.5em)
+    English translation and typesetting\ by Simon Montagu\
+    #larger[Jerusalem]\
+    #larger[2026]\
+    using Typst
     #v(.5em)
     #image("hatafSegolLogoNoText.png", width: 16mm)
-    באמצעות Typst
+    Published by Ḥataf Segol
 
     #pagebreak(to: "odd")
     #counter(page).update(1)
