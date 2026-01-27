@@ -1,7 +1,7 @@
-#let epigraph(quotation, source: "") = {
+#let epigraph(width: 55%, quotation, source: "") = {
   align(left)[
     #block(
-      width: 55%,
+      width: width,
       spacing: 2.5em,
       [
         #align(right)[#text(size: 0.9em)[#quotation]]

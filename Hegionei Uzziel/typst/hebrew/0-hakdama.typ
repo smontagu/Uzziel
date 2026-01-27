@@ -1,5 +1,7 @@
 #import "macros.typ": *
 
+#outline(depth: 2)
+
 == הקדמה
 
 #epigraph([יהיו לרצון אמרי פי והגיון לבי לפניך\ ה' צורי וגואלי])

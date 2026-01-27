@@ -6,10 +6,18 @@
   subtitle: "חלק ב",
   author: "הרב בן ציון מאיר חי עוזיאל",
   publicationDate:"תשי״ד",
+  titlePageText: [
+  מאת הראש״ל הרב הראשי לישראל הגאון הגדול מופה״ד\
+מרן הרב רבי #text(size: 16pt)[ בן ציון מאיר חי עזיאל] זצוק״ל
+בהרב הגאון הצדיק #larger[יוסף רפאל עזיאל] זצוק״ל\
+    ראב״ד מקודש בעיקו״ת ירושצ״ו
+  ],
   frontMatter: [
     #include "13.5-hakdama2.typ"
   ]
 )
+
+// Volume 2 starts from שער יד
 #counter(heading).update(13)
 
 #include "14-yira-ahava.typ"
