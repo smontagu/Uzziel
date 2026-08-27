@@ -1,0 +1,76 @@
+/* Page layout */
+: root {
+    color: black;
+    background-color: white;
+    direction: ltr;
+}
+
+body {
+    font-family: serif;
+    font-size: 20pt;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+div.content-wrapper {
+    margin-right: 20%;
+    margin-left: 20%;
+    counter-reset: footnote-number;
+}
+
+div.content-wrapper p {
+    box-sizing: border-box;
+}
+
+div.citation p {
+    font-style: italic;
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+}
+
+sup[role="doc-noteref"] a {
+    font-size: .75em;
+}
+
+section[role="doc-endnotes"] > ol {
+    font-size: .8em;
+    list-style-type: decimal;
+}
+
+span[role="footnote-ref"]:before {
+    counter-increment: footnote-number;
+    content: counter(footnote-number, decimal);
+    font-size: 0.5em;
+    vertical-align: super;
+    background-color: Cornsilk;
+}
+
+span[role="footnote"]:before {
+    content: counter(footnote-number, decimal);
+    margin-right: .25em;
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+span[role="footnote"] {
+    display: block;
+    text-align: left;
+    float: left;
+    clear: left;
+    margin-left: -30%;
+    margin-top: .5em;
+    max-width: 25%;
+    background-color: Cornsilk;
+    font-size: 0.6em;
+}
