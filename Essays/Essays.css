@@ -7,17 +7,17 @@
 
 body {
     font-family: serif;
-    font-size: 20pt;
+    font-size: 16pt;
 }
 
 h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h2 {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 div.content-wrapper {
@@ -39,27 +39,18 @@ p {
     text-align: justify;
 }
 
-sup[role="doc-noteref"] a {
-    font-size: .75em;
-}
-
-section[role="doc-endnotes"] > ol {
-    font-size: .8em;
-    list-style-type: decimal;
-}
-
 span[role="footnote-ref"]:before {
     counter-increment: footnote-number;
     content: counter(footnote-number, decimal);
-    font-size: 0.5em;
+    font-size: .75rem;
     vertical-align: super;
     background-color: Cornsilk;
 }
 
 span[role="footnote"]:before {
     content: counter(footnote-number, decimal);
-    margin-right: .25em;
-    font-size: 0.5em;
+    margin-right: .25rem;
+    font-size: 0.5rem;
     vertical-align: super;
 }
 
@@ -69,8 +60,8 @@ span[role="footnote"] {
     float: left;
     clear: left;
     margin-left: -30%;
-    margin-top: .5em;
+    margin-top: .5rem;
     max-width: 25%;
     background-color: Cornsilk;
-    font-size: 0.6em;
+    font-size: 1rem;
 }
