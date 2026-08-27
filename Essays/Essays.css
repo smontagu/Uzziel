@@ -1,13 +1,10 @@
 /* Page layout */
-: root {
+html {
     color: black;
     background-color: white;
     direction: ltr;
-}
-
-body {
     font-family: serif;
-    font-size: 16pt;
+    font-size: 1.5vw;
 }
 
 h1 {
@@ -21,7 +18,7 @@ h2 {
 }
 
 div.content-wrapper {
-    margin-right: 20%;
+    margin-right: 5%;
     margin-left: 20%;
     counter-reset: footnote-number;
 }
@@ -59,9 +56,9 @@ span[role="footnote"] {
     text-align: left;
     float: left;
     clear: left;
-    margin-left: -30%;
+    margin-left: -25%;
     margin-top: .5rem;
-    max-width: 25%;
+    max-width: 22%;
     background-color: Cornsilk;
-    font-size: 1rem;
+    font-size: .8rem;
 }
