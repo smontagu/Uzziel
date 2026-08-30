@@ -144,8 +144,8 @@ to him and plead for our redemption and liberation.
 == The liturgy of the day
 <the-liturgy-of-the-day>
 The Rosh Hashana services are unique among all the Shabbat and Festival
-services, in its content, in its form, and in its melodies that are so
-appropriate to the holiness and reverence of the day, and in the
+services, in their content, in their form, in the melodies that are
+so appropriate to the holiness and reverence of the day, and in the
 sounding of the Shofar with its rousing, terrifying, strengthening and
 comforting call.
 
