@@ -44,6 +44,10 @@ span[role="footnote-ref"]:before {
     background-color: Cornsilk;
 }
 
+span.firstFootnote[role="footnote"]:before {
+    content: none;
+}
+
 span[role="footnote"]:before {
     content: counter(footnote-number, decimal);
     margin-right: .25rem;
