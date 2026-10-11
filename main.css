@@ -1,5 +1,9 @@
 body {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -25,10 +29,16 @@ h3 {
     font-family: David CLM, David, serif
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
+.header, .footer {
+    flex-shrink: 0;
+    background-color: Turquoise;
+}
+
+.content {
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 0 0;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: LightYellow;
 }
