@@ -31,8 +31,12 @@ h3 {
 
 .header, .footer {
     flex-shrink: 0;
-    background-color: Turquoise;
+    background-color: #0038B8;
+    color: white;
 }
+
+.header { margin-top: 2em}
+.footer { margin-bottom: 2em}
 
 .content {
     left: 0;
@@ -40,5 +44,5 @@ h3 {
     margin: 0 0;
     flex: 1 1 auto;
     overflow-y: auto;
-    background-color: LightYellow;
+    background-color: White;
 }
