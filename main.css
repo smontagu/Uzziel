@@ -40,7 +40,7 @@ h3 {
 .header { margin-top: 2em}
 .footer {
     margin-bottom: 2em;
-    font-size: 12pt;
+    font-size: smaller;
 }
 
 .content {
