@@ -35,8 +35,13 @@ h3 {
     color: white;
 }
 
+.header a, .footer a { color: yellow}
+
 .header { margin-top: 2em}
-.footer { margin-bottom: 2em}
+.footer {
+    margin-bottom: 2em;
+    font-size: 12pt;
+}
 
 .content {
     left: 0;
