@@ -3,17 +3,16 @@
 
 #show: essay.with()
 
-= Ḥakham Benṣion Meir Ḥai ‘Uzziel
-= Mishpaṭe ‘Uzziel 4 Ḥoshen Mishpat 6
-#v(1em)
-= Women Voting in Public Elections
+= Women Voting in Public Elections\ Hakham Ben Ṣion Meʾir Ḥai ʿUzziel
 
+#v(1em)
+#align(right)[#emph[Mishpaṭe ‘Uzziel 4, Ḥoshen Mishpat 6\ Translation and footnotes: Simon Montagu.]]
 I wrote this _teshuba_ some time ago in order to clarify the _halacha_
     for myself, without intending to publish it or make a practical ruling on
     this issue. But now, since the question has been settled, I see fit to
     publish it in order to magnify Torah.
 
-    == I: Women's rights in the elected assembly and the governing bodies of the community and the _Yishuv_.
+    == 1: Women's rights in the elected assembly and the governing bodies of the community and the _Yishuv_.
 
     A stormy controversy raged around this issue through the length and
      breadth of the land of Israel, with placards, pamphlets, and newspaper
@@ -96,19 +95,20 @@ I wrote this _teshuba_ some time ago in order to clarify the _halacha_
      it, whose rulings they will follow in all matters connected to their
      property and their children's education?
 
-    Therefore, since we have found no indication of this prohibition, we see
-     no justification for opposing women's right to vote or for dismissing the
+    Therefore, since we have found no indication of this prohibition, we see no
+     justification for opposing women's right to vote or for dismissing the
      question, when a section of the community is in favour of it. Perhaps this
-     is similar to the case where the Mishna said "Even if 99 say [that the
-     fruits] should be distributed and one says that they should be left in the
-     field, one listens to the latter, since they spoke according to _halacha_
-     (mPe’a 4:2). And further than that, they permitted women to lay hands on
-     sacrifices in order to grant satisfaction to women (bḤagiga 16), even
-     though it appears to be forbidden. _A fortiori_ in the question before us,
-     where there is no question of infringing a prohibition, and when forbidding
-     their participation will be insulting and offensive, it is clear that they
-     should be given the right to participate.
+     is similar to the case where the Mishna said "Even if ninety-nine say [that
+     the fruits] should be distributed and one says that they should be left in
+     the field, one listens to the latter, since they spoke according to
+     _halacha_ (mPe’a 4:2). And further than that, they permitted women to lay
+     hands on sacrifices in order to grant satisfaction to women (bḤagiga 16),
+     even though it appears to be forbidden. _A fortiori_ in the question before
+     us, where there is no question of infringing a prohibition, and when
+     forbidding their participation will be insulting and offensive, it is clear
+     that they should be given the right to participate.
 
+    /*
     == 2: Women being elected
 
     The second question is whether a woman can be elected. Now here there
@@ -122,4 +122,5 @@ I wrote this _teshuba_ some time ago in order to clarify the _halacha_
     appointing women to positions of authority, and conforms to the hidden
     _halacha_ discovered by Rabbi Shelomo Aharon Wertenheimer:#footnote[See
     _Malki Baqodesh_, _loc. cit._]
- )
+    */
+ 
