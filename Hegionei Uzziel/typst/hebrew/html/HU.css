@@ -1,0 +1,87 @@
+/* Page layout */
+html {
+    color: black;
+    background-color: white;
+    direction: rtl;
+    font-family: serif;
+    font-size: clamp(12pt, 2.2vw, 18pt);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+div.content-wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+    counter-reset: footnote-number;
+}
+
+div.content-wrapper p {
+    box-sizing: border-box;
+}
+
+div.citation p {
+    font-style: italic;
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+}
+
+span[role="footnote-ref"]:before {
+    counter-increment: footnote-number;
+    content: counter(footnote-number, decimal);
+    font-size: .75rem;
+    vertical-align: super;
+    background-color: Cornsilk;
+}
+
+span.firstFootnote[role="footnote"]:before {
+    content: none;
+}
+
+span[role="footnote"]:before {
+    content: counter(footnote-number, decimal);
+    margin-right: .25rem;
+    font-size: 0.5rem;
+    vertical-align: super;
+}
+
+span[role="footnote"] {
+    display: block;
+    text-align: left;
+    float: left;
+    clear: left;
+    margin-left: -25%;
+    margin-top: .5rem;
+    max-width: 22%;
+    background-color: Cornsilk;
+    font-size: .8rem;
+}
+
+ol.mainIndex {
+    margin-right: 2rem;
+    list-style: none;
+    counter-reset: shaar-counter;
+}
+
+ol.mainIndex li {
+    counter-increment: shaar-counter;
+}
+
+ol.mainIndex li::marker {
+    content: "שער " counter(shaar-counter, hebrew) ": ";
+}
+
+p.poem {
+    margin-right: 1em;
+    font-size: larger;
+}

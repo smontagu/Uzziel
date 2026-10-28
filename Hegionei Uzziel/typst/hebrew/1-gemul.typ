@@ -1,5 +1,6 @@
 #import "macros.typ": *
 // TODO: style part and chapter headings
+
 = גמול השם
 
 == בריאת העולם
