@@ -5,6 +5,13 @@ html {
     direction: rtl;
     font-family: serif;
     font-size: clamp(12pt, 2.2vw, 18pt);
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -84,4 +91,52 @@ ol.mainIndex li::marker {
 p.poem {
     margin-right: 1em;
     font-size: larger;
+}
+
+#navContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#navigationBar {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#navNext, #navUp, navPreviou {
+    flex: 1;
+    display: flex;
+}
+
+#navPrevious {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+#navNext {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#navUp {
+    justify-content: center;
+}
+
+#aPrevious, #aNext {
+    color: blue;
+    text-decoration: underline;
+    display:inline-block;
+}
+
+#contentFrame {
+    flex-grow: 1;
+    border: none;
+    width: 100%;
 }
