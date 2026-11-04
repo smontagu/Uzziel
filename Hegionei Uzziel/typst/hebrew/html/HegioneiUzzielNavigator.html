@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>הגיוני עוזיאל</title>
+  <link rel="stylesheet" href="HU.css" type="text/css">
+  <script type="text/javascript">
+   const fileList = [
+    ["hakdama.html", "הקדמה"],
+    ["1-gemul.html", "גמול השם"],
+    ["2-gemul.html", "הגמול בכללו ובפרטיו"],
+    ["3-nation.html", "האומה ותגמוליה"],
+    ["4-faith.html", "אמונה צרופה"],
+    ["5-choice.html", "הבחירה"],
+    ["6-providence.html", "השקפת תורת ישראל באמונת ההשגחה"],
+    ["7-fear.html", "יראת ה' ודעת אלקים"],
+    ["8-believer.html", "המאמין והחפשי בתחית האומה"],
+    ["9-believer-israel.html", "המאמין והחפשי במדינת ישראל"],
+    ["10-knowledge.html", "התחלות למדע האלקי"],
+    ["11-belief.html", "היראה והכפירה, או ההכרה וההתנכרות"],
+    ["12-soul.html", "מהות הנפש"],
+    ["13-saadia.html", "רס״ג המורה"],
+    ["14-yira-ahava.html", "יראה ואהבה"],
+    ["15-ahavat-tora.html", "אהבת התורה"],
+    ["16-devekut.html", "דבקות בה׳"],
+    ["17-hashem-hu-haelohim.html", "ה׳ הוא האלקים"],
+    ["18-misvot-vetakhlitan.html", "המצות ותכליתן"],
+    ["19-misvat-kedusha.html", "מצות קדושה"],
+    ["20-misvat-yira-veahava.html", "מצות יראה ואהבה"],
+    ["21-hakarat-hateuda.html", "הכרת התעודה והשלמתה"],
+    ["22-haahava-bahaim.html", "האהבה שבחיים"],
+    ["23-ahavat-reim.html", "אהבת רעים"],
+    ["24-yemot-hamashiah.html", "ימות המשיח"],
+    ["25-haleumiut-veteudatah.html", "הלאומיות ותעודתה"],
+    ["26-teudatenu-bahaim.html", "תעודתנו בחיים"],
+    ["27-hasekhel-vehahefes.html", "השכל והחפץ"],
+    ["28-hageula-veteudatah.html", "הגאולה ותעודתה"],
+    ["29-hahet-vehateshuva.html", "החטא והתשובה"],
+    ["30-derakhim-baavoda.html", "דרכים בעבודת ה׳"],
+    ["31-briut-venekiut.html", "בריאות ונקיות"],
+    ["32-yehuda-halevi.html", "שירת ישראל וכנורה, רבי יהודה הלוי"]
+   ];
+
+   var currentPage = 0;
+
+   function initialize() {
+     const queryString = window.location.search;
+     const urlParams = new URLSearchParams(queryString);
+     currentPage = Number(urlParams.get("shaar"));
+     if (currentPage) {
+       loadContent(currentPage);
+     }
+   }
+
+   function getFileName(shaar) {
+     if (shaar > 0 && shaar < fileList.length) {
+       return fileList[shaar][0];
+     } else {
+       return "";
+     }
+   }
+
+   function getTitle(shaar) {
+     if (shaar >= 0 && shaar < fileList.length) {
+       return fileList[shaar][1];
+     } else {
+       return "";
+     }
+   }
+
+   function previousPage() {
+     if (currentPage == 0) {
+       return;
+     } else {
+       --currentPage;
+       loadContent();
+     }
+   }
+
+   function nextPage() {
+     if (currentPage == fileList.length - 1) {
+       return;
+     } else {
+       ++currentPage;
+       loadContent();
+     }
+   }
+
+   function loadContent() {
+     const theTitle = getTitle(currentPage);
+     document.getElementById("contentFrame").src = getFileName(currentPage);
+
+     const aPrevious = document.getElementById("aPrevious");
+     if (currentPage > 0) {
+       aPrevious.innerHTML = getTitle(currentPage - 1);
+     } else {
+       aPrevious.innerHTML = "";
+     }
+
+     const aNext = document.getElementById("aNext");
+     if (currentPage < fileList.length - 1) {
+       aNext.innerHTML = getTitle(currentPage + 1);
+     } else {
+       aNext.innerHTML = "";
+     }
+
+   }
+  </script>
+</head>
+<body onload="initialize()">
+  <div id="navContent">
+    <div id="navigationBar">
+      <div id="navPrevious" onClick="previousPage()">
+         → לשער הקודם: <span id="aPrevious"></span>
+      </div>
+      <div id="navUp">
+        <span><a id="aUp" href="index.html">לתוכן העניינים</a></span>
+      </div>
+      <div id="navNext" onclick="nextPage()">
+        לשער הבא:&nbsp;<span id="aNext"></span>&nbsp;←
+      </div>
+    </div>
+    <iframe id="contentFrame">
+    </iframe>
+  </div>
+</body>
+
+
+
+
