@@ -89,6 +89,8 @@
    function loadContent() {
      const theTitle = getTitle(currentPage);
      document.getElementById("contentFrame").src = getFileName(currentPage);
+     const iFrame = document.getElementById("contentFrame");
+     iFrame.contentWindow.location.replace(getFileName(currentPage));
 
      const aPrevious = document.getElementById("aPrevious");
      if (currentPage > 0) {
