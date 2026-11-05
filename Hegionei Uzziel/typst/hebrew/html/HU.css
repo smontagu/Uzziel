@@ -140,3 +140,7 @@ p.poem {
     border: none;
     width: 100%;
 }
+
+.content-wrapper > p {
+    width: 24rem;
+}
