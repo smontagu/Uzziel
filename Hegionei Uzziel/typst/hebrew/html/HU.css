@@ -142,5 +142,5 @@ p.poem {
 }
 
 .content-wrapper > p {
-    width: 24rem;
+    width: clamp(33%, 24em, 80%);
 }
